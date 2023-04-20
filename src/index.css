@@ -1,13 +1,36 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: BarksSpears;
+  src: url('./assets/fonts/BarkSpears.ttf');
+}
+@font-face {
+  font-family: SimplySans;
+  src: url('./assets/fonts/SimplySans-Book.ttf');
+}
+@font-face {
+  font-family: FarmHouse;
+  src: url('./assets/fonts/Farmhouse.otf');
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* ABOUT.JS HEADING */
+#name-heading{
+  font-family: "BarksSpears";
+  font-size: 75px;
+}
+
+/* SECTION HEADINGS */
+#section-heading{
+  font-size: 50px;
+}
+
+/* BUTTON HOVER */
+#button:hover {
+  /* background-color: white; */
+  color: white;
+}
+/* BODY STYLING */
+body {
+  background-image: url('./assets/background-images/Strawberry-Background.jpg');
+  background-position: center;
+  font-family: 'SimplySans';
+  font-size: 20px;
 }
