@@ -4,9 +4,11 @@ import StreamLine from '../assets/photos/StreamLine.png'
 import DocuSet from '../assets/photos/DocuSet.png'
 import ArmagHeadOn from '../assets/photos/ArmagHeadOn.png'
 import VinFinder from '../assets/photos/VinFinder.png'
+import DaddyBop from '../assets/photos/MusicBot.gif'
+import ChatGPT from '../assets/photos/ChaptGPT.gif';
 
 function Projects(props) {
-	const [key, setKey] = useState('Vin Finder')
+	const [key, setKey] = useState('daddybop')
 
   return (
 		<Container id='projects' className='pt-5'>
@@ -14,11 +16,68 @@ function Projects(props) {
 				Projects
 			</h2>
 
-
 			<Tabs
 				className='bg-light rounded'
 				activeKey={key}
 				onSelect={(k) => setKey(k)}>
+				<Tab eventKey='daddybop' title='Discord Music Bot'>
+					<Card>
+						<Card.Img variant='top' src={DaddyBop} />
+						<Card.Body>
+							<Card.Title style={{ fontSize: '30px' }}>Daddy Bop</Card.Title>
+							<Card.Text>
+								A Backend application that allows discord users to stream songs
+								to the voice channel they're connected to! Daddy Bop utilizes
+								the Discord.js and DisTube packages to listen for slash
+								interactions and their respective commands, which have been
+								programmed to carry out functions such as{' '}
+								<i>play, pause, resume, skip, stop, and queue</i>.
+							</Card.Text>
+							<Card.Text>
+								<b>Technologies Used: </b>
+								<em>JavaScript, DiscordJS, DisTune</em>
+							</Card.Text>
+						</Card.Body>
+						<Card.Footer className='d-flex justify-content-end'>
+							<Button
+								size='lg'
+								href='https://github.com/mariesaoconnell/daddy-bop'
+								target='_blank'
+								className='mx-5 px-5 my-2'>
+								Repo
+							</Button>
+						</Card.Footer>
+					</Card>
+				</Tab>
+				<Tab eventKey='dixon' title='Discord ChatGPT Bot'>
+					<Card>
+						<Card.Img variant='top' src={ChatGPT} />
+						<Card.Body>
+							<Card.Title style={{ fontSize: '30px' }}>Daddy Bop</Card.Title>
+							<Card.Text>
+								A backend application that allows discord users to interact with
+								Open AI's API, which acts as an in program mini Chat GPT! Dixon
+								utilized Discord.js to listen for incoming messages from user,
+								Open AI runs the content of the message into their API to
+								generate a response, which is then sent out to the User in
+								discord using discord.js' reply method!
+							</Card.Text>
+							<Card.Text>
+								<b>Technologies Used: </b>
+								<em>JavaScript, DiscordJS, OpenAI</em>
+							</Card.Text>
+						</Card.Body>
+						<Card.Footer className='d-flex justify-content-end'>
+							<Button
+								size='lg'
+								href='https://github.com/mariesaoconnell/chat-gpt-discord-bot'
+								target='_blank'
+								className='mx-5 px-5 my-2'>
+								Repo
+							</Button>
+						</Card.Footer>
+					</Card>
+				</Tab>
 				<Tab eventKey='Vin Finder' title='Vin Finder'>
 					<Card>
 						<Card.Img variant='top' src={VinFinder} />
