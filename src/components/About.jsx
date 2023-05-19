@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
-import photo from '../assets/photos/drawing.JPG';
+import photo from '../assets/photos/drawing.png';
 
 function About(props) {
 	return (
