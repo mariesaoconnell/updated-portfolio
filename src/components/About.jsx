@@ -1,16 +1,16 @@
 import React from 'react';
-import { Container, Row, Col, Image } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import photo from '../assets/photos/drawing.png';
 
 function About(props) {
 	return (
 		<Container
 			id='about'
-			className='d-flex pt-5'
+			className='d-flex p-0'
 			style={{ minHeight: '100vh' }}>
 			<Row xs={1} md={1} lg={2}  className='my-auto d-inline-flex flex-row flex-wrap justify-content-center'>
 				<Col className='my-5'>
-					<Image src={photo} alt='Picture of Me' rounded style={{maxWidth:'100%'}} />
+					<img src={photo} alt='Drawing of me' className='img-fluid' />
 				</Col>
 
 				<Col className='my-auto'>

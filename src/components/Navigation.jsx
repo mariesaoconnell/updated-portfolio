@@ -5,10 +5,9 @@ function Navigation(props) {
 	return (
 		<>
 			<Navbar
-				// style={{ backgroundColor: 'rgba(248, 214, 215)' }}
-				style={{ backgroundColor: 'rgb(237,97,97)' }}
 				fixed='top'
-				variant='light'
+				variant='dark'
+				bg='dark'
 				expand='lg'
 				collapseOnSelect
 				className='mb-5'>
@@ -24,9 +23,9 @@ function Navigation(props) {
 								<Nav.Link href='/#skills'>Skills</Nav.Link>
 								<Nav.Link href='/#projects'>Projects</Nav.Link>
 								<Nav.Link href='/#in-the-works'>In the Works</Nav.Link>
-								<Nav.Link href='/recommended-courses'>
-									Recommended Courses
-								</Nav.Link>
+								{/* <Nav.Link href='/causes'>
+									Causes I Support
+								</Nav.Link> */}
 							</Nav>
 							<Nav>
 								<Nav.Link href='mailto:mariesa.oconnell.dev@gmail.com'>

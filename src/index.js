@@ -8,6 +8,7 @@ import App from './App';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 import Courses from './screens/Courses';
+import Causes from './screens/Causes';
 
 // ROUTER
 const router = createBrowserRouter([
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
   {
     path: '/recommended-courses',
     element: <Courses />,
+  },
+  {
+    path: '/causes',
+    element: <Causes />
   }
 ])
 
