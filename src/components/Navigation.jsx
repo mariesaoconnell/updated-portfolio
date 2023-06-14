@@ -23,18 +23,20 @@ function Navigation(props) {
 								<Nav.Link href='/#skills'>Skills</Nav.Link>
 								<Nav.Link href='/#projects'>Projects</Nav.Link>
 								<Nav.Link href='/#in-the-works'>In the Works</Nav.Link>
-								{/* <Nav.Link href='/causes'>
-									Causes I Support
-								</Nav.Link> */}
 							</Nav>
+							{/* <Nav>
+								<Nav.Link href='/causes'>
+									Spread Awareness
+								</Nav.Link>
+							</Nav> */}
 							<Nav>
 								<Nav.Link href='mailto:mariesa.oconnell.dev@gmail.com'>
-									<Button variant='outline-dark'>Message</Button>
+									<Button variant='outline-light'>Message</Button>
 								</Nav.Link>
 								<Nav.Link
 									href='https://docs.google.com/document/d/1cqvkyEbBUdUnre65Pj1c3gL-EaBZ-FWK/edit?usp=share_link&ouid=107418996880202139994&rtpof=true&sd=true'
 									target='_blank'>
-									<Button variant='outline-dark'>Resume</Button>
+									<Button variant='outline-light'>Resume</Button>
 								</Nav.Link>
 							</Nav>
 						</Container>

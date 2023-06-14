@@ -10,10 +10,10 @@ function Causes(props) {
 			}}>
 			<Breadcrumb className=''>
 				<Breadcrumb.Item href='/'>Home</Breadcrumb.Item>
-				<Breadcrumb.Item active>Causes I Support</Breadcrumb.Item>
+				<Breadcrumb.Item active>Spread Awareness</Breadcrumb.Item>
 			</Breadcrumb>
 
-			<h2>Causes I Support</h2>
+			<h2>Spread Awareness</h2>
 		</Container>
 	);
 }

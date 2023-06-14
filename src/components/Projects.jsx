@@ -6,6 +6,7 @@ import ArmagHeadOn from '../assets/photos/ArmagHeadOn.png'
 import VinFinder from '../assets/photos/VinFinder.png'
 import DaddyBop from '../assets/photos/MusicBot.gif'
 import ChatGPT from '../assets/photos/ChaptGPT.gif';
+import StreamLineUpdated from '../assets/photos/StreamlineUpdated.gif'
 
 function Projects(props) {
 	const [key, setKey] = useState('daddybop')
@@ -23,7 +24,7 @@ function Projects(props) {
 				<Tab eventKey='daddybop' title='Discord Music Bot'>
 					<Card>
 						<Card.Img variant='top' src={DaddyBop} />
-						<Card.Body>
+						<Card.Body className='card-background'>
 							<Card.Title style={{ fontSize: '30px' }}>Daddy Bop</Card.Title>
 							<Card.Text>
 								A Backend application that allows discord users to stream songs
@@ -43,7 +44,7 @@ function Projects(props) {
 								size='lg'
 								href='https://github.com/mariesaoconnell/daddy-bop'
 								target='_blank'
-								className='mx-5 px-5 my-2'>
+								className='card-button mx-5 px-5 my-2'>
 								Repo
 							</Button>
 						</Card.Footer>
@@ -52,7 +53,7 @@ function Projects(props) {
 				<Tab eventKey='dixon' title='Discord ChatGPT Bot'>
 					<Card>
 						<Card.Img variant='top' src={ChatGPT} />
-						<Card.Body>
+						<Card.Body className='card-background'>
 							<Card.Title style={{ fontSize: '30px' }}>Daddy Bop</Card.Title>
 							<Card.Text>
 								A backend application that allows discord users to interact with
@@ -72,7 +73,7 @@ function Projects(props) {
 								size='lg'
 								href='https://github.com/mariesaoconnell/chat-gpt-discord-bot'
 								target='_blank'
-								className='mx-5 px-5 my-2'>
+								className='card-button mx-5 px-5 my-2'>
 								Repo
 							</Button>
 						</Card.Footer>
@@ -81,7 +82,7 @@ function Projects(props) {
 				<Tab eventKey='Vin Finder' title='Vin Finder'>
 					<Card>
 						<Card.Img variant='top' src={VinFinder} />
-						<Card.Body>
+						<Card.Body className='card-background'>
 							<Card.Title style={{ fontSize: '30px' }}>VIN Finder</Card.Title>
 							<Card.Text>
 								a full-stack application that allows users to search VIN Numbers
@@ -101,14 +102,14 @@ function Projects(props) {
 								size='lg'
 								href='https://vinfinder.netlify.app/'
 								target='_blank'
-								className='mx-5 px-5 my-2'>
+								className='card-button mx-5 px-5 my-2'>
 								Site
 							</Button>
 							<Button
 								size='lg'
 								href='https://github.com/mariesaoconnell/ncs-tech-assessment'
 								target='_blank'
-								className='mx-5 px-5 my-2'>
+								className='card-button mx-5 px-5 my-2'>
 								Repo
 							</Button>
 						</Card.Footer>
@@ -117,7 +118,7 @@ function Projects(props) {
 				<Tab eventKey='DocuSet' title='DocuSet'>
 					<Card>
 						<Card.Img variant='top' src={DocuSet} />
-						<Card.Body>
+						<Card.Body className='card-background'>
 							<Card.Title style={{ fontSize: '30px' }}>DocuSet</Card.Title>
 							<Card.Text>
 								DocuSet is a note taking app, powered by the MERN stack. This
@@ -136,14 +137,14 @@ function Projects(props) {
 								size='lg'
 								href='https://cheatsheetmern.netlify.app/'
 								target='_blank'
-								className='mx-5 px-5 my-2'>
+								className='card-button mx-5 px-5 my-2'>
 								Site
 							</Button>
 							<Button
 								size='lg'
 								href='https://github.com/SEIR822-SquardFeelTheMERN/feelthemern-frontend'
 								target='_blank'
-								className='mx-5 px-5 my-2'>
+								className='card-button mx-5 px-5 my-2'>
 								Repo
 							</Button>
 						</Card.Footer>
@@ -152,7 +153,7 @@ function Projects(props) {
 				<Tab eventKey='Streamline' title='Streamline Stream Search'>
 					<Card>
 						<Card.Img variant='top' src={StreamLine} />
-						<Card.Body>
+						<Card.Body className='card-background'>
 							<Card.Title style={{ fontSize: '30px' }}>
 								Streamline Stream Search
 							</Card.Title>
@@ -169,14 +170,50 @@ function Projects(props) {
 								size='lg'
 								href='https://streamlinestreamsearch.netlify.app/'
 								target='_blank'
-								className='mx-5 px-5 my-2'>
+								className='card-button mx-5 px-5 my-2'>
 								Site
 							</Button>
 							<Button
 								size='lg'
 								href='https://github.com/mariesaoconnell/Streamline-Stream-Search'
 								target='_blank'
-								className='mx-5 px-5 my-2'>
+								className='card-button mx-5 px-5 my-2'>
+								Repo
+							</Button>
+						</Card.Footer>
+					</Card>
+				</Tab>
+				<Tab
+					eventKey='StreamlineUpdated'
+					title='Streamline Stream Search  ✨ Updated ✨'>
+					<Card>
+						<Card.Img variant='top' src={StreamLineUpdated} />
+						<Card.Body className='card-background'>
+							<Card.Title style={{ fontSize: '30px' }}>
+								Streamline Stream Search
+							</Card.Title>
+							<Card.Text>
+								Streamline, powered by React, is a platform is used to search
+								movies and shows for the streaming services they're available.
+							</Card.Text>
+							<Card.Text>
+								<b>Technologies Used:</b>{' '}
+								<em>JavaScript, React JS, BootStrap5</em>
+							</Card.Text>
+						</Card.Body>
+						<Card.Footer className='d-flex justify-content-end'>
+							<Button
+								size='lg'
+								href='https://streamline-stream-search.netlify.com/'
+								target='_blank'
+								className='card-button mx-5 px-5 my-2'>
+								Site
+							</Button>
+							<Button
+								size='lg'
+								href='https://github.com/mariesaoconnell/streamline-refactored'
+								target='_blank'
+								className='card-button mx-5 px-5 my-2'>
 								Repo
 							</Button>
 						</Card.Footer>
@@ -185,7 +222,7 @@ function Projects(props) {
 				<Tab eventKey='ArmagHeadOn' title='ArmaHeadOn'>
 					<Card>
 						<Card.Img variant='top' src={ArmagHeadOn} />
-						<Card.Body>
+						<Card.Body className='card-background'>
 							<Card.Title style={{ fontSize: '30px' }}>ArmagHEADon</Card.Title>
 							<Card.Text>
 								ArmagHEADon is a Jeopardy! style quiz game, themed after Dan
@@ -201,14 +238,14 @@ function Projects(props) {
 								size='lg'
 								href='https://armagheadon.netlify.app/'
 								target='_blank'
-								className='mx-5 px-5 my-2'>
+								className='card-button mx-5 px-5 my-2'>
 								Site
 							</Button>
 							<Button
 								size='lg'
 								href='https://github.com/mariesaoconnell/ArmagHEADon-'
 								target='_blank'
-								className='mx-5 px-5 my-2'>
+								className='card-button mx-5 px-5 my-2'>
 								Repo
 							</Button>
 						</Card.Footer>

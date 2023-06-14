@@ -27,6 +27,20 @@
   /* background-color: white; */
   color: white;
 }
+
+/* PROJECT CARD STYLING */
+
+.card-background {
+  background-color: rgb(238, 233, 255);
+}
+
+.card-button{
+  background-color: rgb(129, 104, 202);
+  border: none;
+}
+.card-button:hover{
+  background-color: rgb(203, 195, 227)!important;
+}
 /* BODY STYLING */
 body {
   background-color: rgb(203, 195, 227);

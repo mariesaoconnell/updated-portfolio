@@ -6,9 +6,13 @@ function About(props) {
 	return (
 		<Container
 			id='about'
-			className='d-flex p-0'
+			className='d-flex flex-column p-0'
 			style={{ minHeight: '100vh' }}>
-			<Row xs={1} md={1} lg={2}  className='my-auto d-inline-flex flex-row flex-wrap justify-content-center'>
+			<Row
+				xs={1}
+				md={1}
+				lg={2}
+				className='my-auto d-inline-flex flex-row flex-wrap justify-content-center'>
 				<Col className='my-5'>
 					<img src={photo} alt='Drawing of me' className='img-fluid' />
 				</Col>

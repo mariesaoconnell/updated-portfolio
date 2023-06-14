@@ -4,11 +4,11 @@ import gif from '../assets/photos/work-work-in-progress.gif'
 
 function WorksInProgress(props) {
   return (
-		<>
+
 			<Container
 				id='in-the-works'
-				className='d-flex pt-5'
-				style={{ minHeight: '50vh' }}
+				className='d-flex flex-column pt-5'
+				style={{ minHeight: '70vh' }}
 				fluid>
 				<h2 className='pt-5' id='section-heading'>
 					In the Works
@@ -43,7 +43,7 @@ function WorksInProgress(props) {
 					</Row>
 				</Container>
 			</Container>
-		</>
+
 	);
 }
 
