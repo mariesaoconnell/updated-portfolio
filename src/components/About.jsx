@@ -1,12 +1,12 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Button } from 'react-bootstrap';
 import photo from '../assets/photos/drawing.png';
 
 function About(props) {
 	return (
 		<Container
 			id='about'
-			className='d-flex flex-column p-0'
+			className='blur d-flex flex-column p-0'
 			style={{ minHeight: '100vh' }}>
 			<Row
 				xs={1}
@@ -18,37 +18,27 @@ function About(props) {
 				</Col>
 
 				<Col className='my-auto'>
-					<Container>
+					<Container className='text-center'>
 						<p>
-							<span id='name-heading'> Hi, I'm Mariesa, </span>
-							<br />a fullstack developer by day, survival crafting
-							extraordinaire by night and German Shepherd mom around the clock!
+							<span id='name-heading'> Hi, I'm Mariesa! </span>
+							<br />
+							<h3 className='my-3'>
+								I'm a Fullstack Developer, I specialize in developing in ReactJS
+								and love branching into other tech stacks!
+							</h3>
+							<h4>
+								Check out my <a href='/#skills'>Skills</a> and{' '}
+								<a href='/#projects'>Projects</a>!
+							</h4>
 						</p>
-						<p>
-							Programming first piqued my interest in 2009, while perusing
-							myspace layouts, unable to find the ✨ perfect ✨ layout, I
-							decided to dive into the code and tailor my own!
-						</p>
-						<p>
-							After my personal exploration of CSS, I began taking programming
-							classes in High School, but it wasn't until 2021 I ultimately
-							decided to leave my almost decade long career in auto insurance
-							and transition into a career in development! And in 2022 I
-							graduated from General Assembly's Software Engineering Immersive
-							Remote Program!
-						</p>
-						<p>
-							My favorite parts of coding are being able to create something
-							from nothing and my natural drive and determination to solve
-							problems! I've always identified as a creative person, but lacked
-							the skills typically used to express creativity, which is why{' '}
-							<b>love</b> frontend development!
-						</p>
-						<p>
-							When I'm not programming, I can be caught online on Discord
-							playing ARK Survival or MW2's DMZ! Something about loot driven
-							games sucks me in!
-						</p>
+					</Container>
+					<Container className='d-inline-flex justify-content-evenly px-4 my-5'>
+						<Button className='about-button' size='lg' href='/beyond-the-code'>
+							Mariesa Beyond The Code
+						</Button>
+						<Button className='about-button' size='lg' href='/#contact-form'>
+							Let's Work Together!
+						</Button>
 					</Container>
 				</Col>
 			</Row>

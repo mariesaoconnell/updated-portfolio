@@ -6,7 +6,7 @@ function WorksInProgress(props) {
   return (
 		<Container
 			id='in-the-works'
-			className='d-flex flex-column pt-5'
+			className='blur d-flex flex-column pt-5'
 			style={{ minHeight: '70vh' }}
 			fluid>
 			<h2 className='pt-5' id='section-heading'>

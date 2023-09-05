@@ -12,13 +12,13 @@ function Projects(props) {
 	const [key, setKey] = useState('daddybop')
 
   return (
-		<Container id='projects' className='pt-5'>
+		<Container id='projects' className='blur pt-5'>
 			<h2 className='py-5' id='section-heading'>
 				Projects
 			</h2>
 
 			<Tabs
-				className='bg-light rounded'
+				className='tabs bg-light rounded'
 				activeKey={key}
 				onSelect={(k) => setKey(k)}>
 				<Tab eventKey='daddybop' title='Discord Music Bot'>
@@ -39,7 +39,7 @@ function Projects(props) {
 								<em>JavaScript, DiscordJS, DisTune</em>
 							</Card.Text>
 						</Card.Body>
-						<Card.Footer className='d-flex justify-content-end'>
+						<Card.Footer className='card-footer d-flex justify-content-end'>
 							<Button
 								size='lg'
 								href='https://github.com/mariesaoconnell/daddy-bop'

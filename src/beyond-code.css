@@ -1,0 +1,28 @@
+/* SEASON */
+
+#best-season {
+  background-image: url(./assets/beyond-code/punkins.jpeg);
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#best-season-text {
+  color: orange;
+  font-size: 75px;
+}
+
+/* HOME  */
+#home {
+  background-image: url(./assets/beyond-code/peaches.avif);
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#home-text {
+    color: black;
+    font-size: 75px;
+}

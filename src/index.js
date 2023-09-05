@@ -7,6 +7,7 @@ import {createBrowserRouter, RouterProvider} from 'react-router-dom';
 import App from './App';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
+import BeyondCode from './screens/BeyondCode';
 import Courses from './screens/Courses';
 import Causes from './screens/Causes';
 
@@ -23,7 +24,12 @@ const router = createBrowserRouter([
   {
     path: '/causes',
     element: <Causes />
-  }
+  },
+  {
+    path: '/beyond-the-code',
+    element: <BeyondCode />
+  },
+
 ])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

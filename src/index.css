@@ -11,10 +11,19 @@
   src: url('./assets/fonts/Farmhouse.otf');
 }
 
-/* ABOUT.JS HEADING */
+/* ABOUT*/
 #name-heading{
   font-family: "BarksSpears";
   font-size: 75px;
+  color: rgb(153, 23, 65)
+}
+.about-button {
+  background-color: rgb(153, 23, 65);
+  border: rgb(153, 23, 65);
+}
+
+.about-button:hover {
+  background-color: rgb(84, 5, 30);
 }
 
 /* SECTION HEADINGS */
@@ -22,29 +31,78 @@
   font-size: 50px;
 }
 
-/* BUTTON HOVER */
-#button:hover {
-  /* background-color: white; */
-  color: rgb(203, 195, 227);
-}
 
 /* PROJECT CARD STYLING */
 
-.card-background {
-  background-color: rgb(238, 233, 255);
+.tabs{
+  background-color:  rgb(223, 212, 199)!important;
+}
+
+.card-background{
+  background-color: rgb(223, 212, 199);
+}
+.card-footer {
+    background-color: rgb(137, 123, 106);
 }
 
 .card-button{
-  background-color: rgb(129, 104, 202);
+  background-color: rgb(217, 148, 84);
   border: none;
 }
 .card-button:hover{
-  background-color: rgb(203, 195, 227)!important;
+  background-color: rgb(144, 128, 64)!important;
 }
+
+.card {
+ border: none;
+}
+
+
 /* BODY STYLING */
 body {
-  background-color: rgb(203, 195, 227);
+  background-image: url(./assets/background-images/leaves.jpeg);
   background-position: center;
   font-family: 'SimplySans';
   font-size: 20px;
+}
+
+/* header */
+.header-container {
+  background-image: url(./assets/background-images/leaves.jpeg);
+  height: 600px;
+}
+
+.blur {
+  background-color: rgb(199, 180, 157);
+  box-shadow: 0px 40px 60px #000000;
+}
+
+/* navigation */
+.main-navigation{
+  background-color: rgb(144, 128, 64);
+  color: white !important;
+  margin: auto;
+}
+ .main-footer {
+  background-color: rgb(144, 128, 64);
+  color: white !important;
+  margin: auto;
+}
+
+.nav-button {
+  background-color: rgb(206, 121, 75);
+  border: rgb(146, 74, 36);
+}
+
+.nav-button:hover {
+  background-color: rgb(146, 74, 36);;
+}
+
+.nav-text-styling{
+  color: rgb(233, 213, 188);
+}
+
+/* FOOTER */
+#button {
+  color: rgb(74, 82, 54),
 }

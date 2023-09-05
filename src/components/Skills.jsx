@@ -5,7 +5,7 @@ function Skills(props) {
 	return (
 		<Container
 			id='skills'
-			className='d-flex flex-column p-5'
+			className='blur d-flex flex-column p-5'
 			style={{ minHeight: '100vh' }}
 			fluid>
 			<h2 className='pt-5' id='section-heading'>

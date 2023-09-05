@@ -6,7 +6,7 @@ import { Icon } from '@mui/material';
 function Footer(props) {
 	return (
 		<>
-			<Navbar bg='dark' variant='dark'>
+			<Navbar className='main-footer' variant='dark'>
 				<Container className='d-flex my-4 flex-column'>
 					<Container className='px-5 d-flex justify-content-center'>
 						<Nav.Link
@@ -16,7 +16,7 @@ function Footer(props) {
 							<i
 								id='button'
 								class='devicon-github-original-wordmark colored'
-								style={{ fontSize: 40, color: 'white' }}></i>
+								style={{ fontSize: 40, color: 'rgb(74,82,54)' }}></i>
 						</Nav.Link>
 						<Nav.Link
 							className='mx-5'
@@ -25,18 +25,22 @@ function Footer(props) {
 							<i
 								id='button'
 								class='devicon-linkedin-plain'
-								style={{ fontSize: 40, color: 'white' }}></i>
+								style={{ fontSize: 40, color: 'rgb(74,82,54)' }}></i>
 						</Nav.Link>
 						<Nav.Link
 							className='mx-5'
 							href='mailto:mariesa.oconnell.dev@gmail.com'>
-							<Icon id='button' style={{ fontSize: 40, color: 'white' }}>
+							<Icon
+								id='button'
+								style={{ fontSize: 40, color: 'rgb(74,82,54)' }}>
 								mail
 							</Icon>
 						</Nav.Link>
 					</Container>
 
-					<Container className='px-5 mt-3 d-flex justify-content-center' style={{color: 'white'}}>
+					<Container
+						className='px-5 mt-3 d-flex justify-content-center'
+						style={{ color: 'rgb(74,82,54)' }}>
 						<p>Copyright © 2022 | Design by Mariesa O'Connell</p>
 					</Container>
 				</Container>
