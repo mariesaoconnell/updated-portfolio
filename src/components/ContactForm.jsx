@@ -30,7 +30,9 @@ function ContactForm(props) {
 				<Form
 					id='contact-form'
 					onSubmit={handleSubmit}
-					style={{ width: '100%' }}>
+					style={{ width: '100%' }}
+					action='https://formspree.io/f/maygjpbo'
+					method='POST'>
 					<Row className='my-2 justify-content-md-center'>
 						<Form.Group as={Col} md='4'>
 							<Form.Label>First Name</Form.Label>
@@ -75,7 +77,7 @@ function ContactForm(props) {
 							/>
 						</Form.Group>
 					</Row>
-          <Row className='my-2 justify-content-md-center'>
+					<Row className='my-2 justify-content-md-center'>
 						<Form.Group as={Col} md='8'>
 							<Form.Label>Message</Form.Label>
 							<Form.Control
@@ -94,7 +96,7 @@ function ContactForm(props) {
 							<Button
 								className='about-button'
 								type='submit'
-                size='lg'
+								size='lg'
 								disabled={state.submitting}>
 								Submit
 							</Button>

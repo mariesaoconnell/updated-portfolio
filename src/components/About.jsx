@@ -33,9 +33,6 @@ function About(props) {
 						</p>
 					</Container>
 					<Container className='d-inline-flex justify-content-evenly px-4 my-5'>
-						<Button className='about-button' size='lg' href='/beyond-the-code'>
-							Mariesa Beyond The Code
-						</Button>
 						<Button className='about-button' size='lg' href='/#contact-form'>
 							Let's Work Together!
 						</Button>
