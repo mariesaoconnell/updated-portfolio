@@ -7,9 +7,10 @@ import VinFinder from '../assets/photos/VinFinder.png'
 import DaddyBop from '../assets/photos/MusicBot.gif'
 import ChatGPT from '../assets/photos/ChaptGPT.gif';
 import StreamLineUpdated from '../assets/photos/StreamlineUpdated.gif'
+import Cinder from '../assets/photos/Cinder.gif';
 
 function Projects(props) {
-	const [key, setKey] = useState('daddybop')
+	const [key, setKey] = useState('cinder')
 
   return (
 		<Container id='projects' className='blur pt-5'>
@@ -21,7 +22,52 @@ function Projects(props) {
 				className='tabs bg-light rounded'
 				activeKey={key}
 				onSelect={(k) => setKey(k)}>
-				<Tab eventKey='daddybop' title='Discord Music Bot'>
+				<Tab eventKey='cinder' title="Baldur's Gate 3 Romance Guide">
+					<Card>
+						<Card.Img variant='top' src={Cinder} alt='Cinder application gif' />
+						<Card.Body className='card-background'>
+							<Card.Title style={{ fontSize: '30px' }}>Cinder 🔥</Card.Title>
+							<Card.Text>
+								<p>
+									Cinder is a Full-Stack application, developed to assist users in
+									efficiency romancing their BG3 Crush.
+								</p>
+
+								<p>
+									My inspiration for Cinder came from my love of BG3 and my devotion to romance every character to see how their ending played out. Doing that on your own without some kind of guide would take a ton of time, considering 300 hours in I had finally managed to finish my first play through. The few guides I found felt a bit lack luster, so I started developing an app that felt easier on the eyes and made navigation and tracking my progress easier.
+								</p>
+
+								<p>
+									Cinder was developed to allow users to search dialogue scenes by
+									act, companion or simply view all dialogue scene in the database
+									for their Bosom Companion's reaction. Cinder also allows users
+									to create new dialogue scenarios and is <i>anticipated</i> to
+									support user Logins, where Users will be able to add, update and
+									delete their own posts, while also being able to rate and
+									comment on other users posts.
+								</p>
+								
+							</Card.Text>
+							<Card.Text>
+								<b>Technologies Used: </b>
+								<em>ReactJS, Bootstrap, NodeJS, Express, MySQL</em>
+							</Card.Text>
+						</Card.Body>
+						<Card.Footer className='card-footer d-flex justify-content-end'>
+							<Button
+								size='lg'
+								href='https://github.com/mariesaoconnell/bg3-companion-app'
+								target='_blank'
+								className='card-button mx-5 px-5 my-2'>
+								Repo
+							</Button>
+						</Card.Footer>
+					</Card>
+				</Tab>
+				<Tab
+					eventKey='daddybop'
+					title='Discord Music Bot'
+					alt='Daddy Bop Application Gif'>
 					<Card>
 						<Card.Img variant='top' src={DaddyBop} />
 						<Card.Body className='card-background'>
@@ -50,7 +96,10 @@ function Projects(props) {
 						</Card.Footer>
 					</Card>
 				</Tab>
-				<Tab eventKey='dixon' title='Discord ChatGPT Bot'>
+				<Tab
+					eventKey='dixon'
+					title='Discord ChatGPT Bot'
+					alt='Discord ChatGPT Bot application gif'>
 					<Card>
 						<Card.Img variant='top' src={ChatGPT} />
 						<Card.Body className='card-background'>
@@ -81,7 +130,11 @@ function Projects(props) {
 				</Tab>
 				<Tab eventKey='Vin Finder' title='Vin Finder'>
 					<Card>
-						<Card.Img variant='top' src={VinFinder} />
+						<Card.Img
+							variant='top'
+							src={VinFinder}
+							alt='VinFinder Application Gif'
+						/>
 						<Card.Body className='card-background'>
 							<Card.Title style={{ fontSize: '30px' }}>VIN Finder</Card.Title>
 							<Card.Text>
@@ -117,7 +170,11 @@ function Projects(props) {
 				</Tab>
 				<Tab eventKey='DocuSet' title='DocuSet'>
 					<Card>
-						<Card.Img variant='top' src={DocuSet} />
+						<Card.Img
+							variant='top'
+							src={DocuSet}
+							alt='DocuSet Application Gif'
+						/>
 						<Card.Body className='card-background'>
 							<Card.Title style={{ fontSize: '30px' }}>DocuSet</Card.Title>
 							<Card.Text>
@@ -152,7 +209,11 @@ function Projects(props) {
 				</Tab>
 				<Tab eventKey='Streamline' title='Streamline Stream Search'>
 					<Card>
-						<Card.Img variant='top' src={StreamLine} />
+						<Card.Img
+							variant='top'
+							src={StreamLine}
+							alt='Streamline OG Application Gif'
+						/>
 						<Card.Body className='card-background'>
 							<Card.Title style={{ fontSize: '30px' }}>
 								Streamline Stream Search
@@ -187,7 +248,11 @@ function Projects(props) {
 					eventKey='StreamlineUpdated'
 					title='Streamline Stream Search  ✨ Updated ✨'>
 					<Card>
-						<Card.Img variant='top' src={StreamLineUpdated} />
+						<Card.Img
+							variant='top'
+							src={StreamLineUpdated}
+							alt='Streamline Updated Application Gif'
+						/>
 						<Card.Body className='card-background'>
 							<Card.Title style={{ fontSize: '30px' }}>
 								Streamline Stream Search
